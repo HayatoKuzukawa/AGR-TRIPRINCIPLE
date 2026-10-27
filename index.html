@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>AGR TRIPRINCIPLE｜公式オンラインショップ</title>
+<meta name="description" content="AGR × TRIPRINCIPLE 公式サイト。パター・練習器具のオンラインショップ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ ヘッダー ============ -->
+<header class="header">
+  <div class="header__util">
+    <div class="wrap header__utilInner">
+      <a href="#" class="header__utilLink"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>アカウント</a>
+      <a href="#" class="header__utilLink"><svg class="ico" viewBox="0 0 24 24"><path d="M10 17l5-5-5-5M15 12H3M14 3h6v18h-6"/></svg>ログイン</a>
+    </div>
+  </div>
+
+  <div class="header__main">
+    <div class="wrap header__mainInner">
+      <h1 class="header__logo"><a href="index.html">AGR × TRIPRINCIPLE</a></h1>
+
+      <div class="header__tools">
+        <button type="button" class="header__drop">カテゴリー<span class="caret"></span></button>
+        <button type="button" class="header__drop">コンテンツ<span class="caret"></span></button>
+        <span class="header__sep"></span>
+        <form class="header__search" role="search" action="#" method="get">
+          <button type="button" class="header__icon header__searchBtn" aria-label="検索を開く" aria-expanded="false" aria-controls="header-q"><svg class="ico" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+          <input type="search" id="header-q" name="q" class="header__searchInput" placeholder="商品を検索" aria-label="商品を検索" tabindex="-1">
+        </form>
+        <a href="#" class="header__icon" aria-label="カート"><svg class="ico" viewBox="0 0 24 24"><path d="M3 4h2l2.5 11h11L21 7H6.2"/><circle cx="9" cy="19.5" r="1.5"/><circle cx="17" cy="19.5" r="1.5"/></svg></a>
+        <button type="button" class="header__burger" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </div>
+
+  <nav class="gnav" id="gnav">
+    <ul class="wrap gnav__list">
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="#products">PRODUCTS</a></li>
+      <li><a href="#information">NEWS</a></li>
+      <li><a href="#">GUIDE</a></li>
+      <li><a href="#">CONTACT</a></li>
+      <li><a href="#">CART</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============ スライダー 1500×550 ============ -->
+  <section class="hero">
+    <div class="slider" data-slider>
+      <div class="slider__track">
+        <!-- 1枚目：ブランド表記 -->
+        <article class="slide is-active">
+          <div class="ph slide__img" data-size="1500×550"><img src="https://images.unsplash.com/photo-1532508583690-538a1436f423?w=1500&h=550&fit=crop&auto=format&q=80" alt="グリーン上のパターとボール" loading="lazy"></div>
+          <div class="slide__body">
+            <span class="tag">Brand</span>
+            <p class="slide__brand">AGR × TRIPRINCIPLE</p>
+            <p class="slide__copy">その1打を、確信に変える。</p>
+            <a href="#products" class="btn btn--white">商品を見る</a>
+          </div>
+        </article>
+        <!-- 2枚目：TRIPRINCIPLEとは -->
+        <article class="slide">
+          <div class="ph slide__img" data-size="1500×550"><img src="https://images.unsplash.com/photo-1621005569855-3a304a19198a?w=1500&h=550&fit=crop&auto=format&q=80" alt="ピンを望むパッティング" loading="lazy"></div>
+          <div class="slide__body">
+            <span class="tag">About</span>
+            <p class="slide__brand">TRIPRINCIPLEとは</p>
+            <p class="slide__copy">入るパットには、理由がある。</p>
+            <a href="about.html" class="btn btn--white">詳しく見る</a>
+          </div>
+        </article>
+        <!-- 3枚目：3つの原理 -->
+        <article class="slide">
+          <div class="ph slide__img" data-size="1500×550"><img src="https://images.unsplash.com/photo-1600185801750-95579bfd6fd9?w=1500&h=550&fit=crop&auto=format&q=80" alt="パッティングするゴルファー" loading="lazy"></div>
+          <div class="slide__body">
+            <span class="tag">Principles</span>
+            <p class="slide__brand">TRIPRINCIPLE｜3つの原理</p>
+            <p class="slide__copy">芯で捉え、向きを知り、狙いへ送る。</p>
+            <a href="about.html#principles" class="btn btn--white">詳しく見る</a>
+          </div>
+        </article>
+      </div>
+
+      <button type="button" class="slider__arrow slider__arrow--prev" aria-label="前へ"></button>
+      <button type="button" class="slider__arrow slider__arrow--next" aria-label="次へ"></button>
+
+      <div class="slider__ctrl">
+        <div class="slider__dots"></div>
+        <button type="button" class="slider__pause" aria-label="一時停止"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRIPRINCIPLEとは ============ -->
+  <section class="sec" id="about">
+    <div class="inner split">
+      <div class="ph split__img" data-size="600×278"><img src="https://images.unsplash.com/photo-1631213611148-aa45cfbb9472?w=600&h=278&fit=crop&auto=format&q=80" alt="グリーン上のゴルファー" loading="lazy"></div>
+      <div class="split__text split__text--dark">
+        <h2 class="split__title">TRIPRINCIPLEとは</h2>
+        <p>パッティングの結果を左右するのは、才能でも感覚でもなく「原理」です。TRIPRINCIPLEは、「スイートエリアでのインパクト」「フェース面の開閉度の認知」「ストロークの動きと方向性」の3つの原理からパットを見直し、誰でも再現できる打ち方を目指す考え方です。迷いの消えたストロークが、カップまでの距離を確実に縮めます。</p>
+        <a href="about.html" class="btn btn--white">TRIPRINCIPLEについて詳しく見る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3つの原理 ============ -->
+  <section class="sec sec--dark" id="principles">
+    <div class="inner">
+      <h2 class="ttl"><span class="ttl__en">THREE PRINCIPLES</span><span class="ttl__ja">3つの原理</span></h2>
+      <div class="principles">
+        <article class="principle">
+          <div class="ph principle__img" data-size="372×456"><img src="https://images.unsplash.com/photo-1530028438-3fad1bbcb752?w=372&h=456&fit=crop&auto=format&q=80" alt="パターの芯でボールを捉える瞬間" loading="lazy">
+            <span class="principle__en">PRINCIPLE 01<br>IMPACT</span>
+          </div>
+          <button type="button" class="principle__fig" data-zoom="image/principle-1.png" aria-label="図解を拡大：スイートエリアは斜めの領域">
+            <img src="image/principle-1.png" alt="図解：スイートエリアは斜めの領域" loading="lazy">
+          </button>
+          <h3 class="principle__cap"><span class="principle__no">01</span>スイートエリアでのインパクト</h3>
+          <p class="principle__text">クラブの重心がかかる斜めの領域、それが「スイートエリア」。この領域でボールを捉えることで、エネルギーがロスなく伝わり、距離感と転がりが安定します。</p>
+        </article>
+        <article class="principle">
+          <div class="ph principle__img" data-size="372×456"><img src="https://images.unsplash.com/photo-1763031382553-a4a8672b378f?w=372&h=456&fit=crop&auto=format&q=80" alt="ボールの後ろに構えたパターヘッド" loading="lazy">
+            <span class="principle__en">PRINCIPLE 02<br>FACE</span>
+          </div>
+          <button type="button" class="principle__fig" data-zoom="image/principle-2.png" aria-label="図解を拡大：目標線とフェースの向き">
+            <img src="image/principle-2.png" alt="図解：目標線とフェースの向き" loading="lazy">
+          </button>
+          <h3 class="principle__cap"><span class="principle__no">02</span>フェース面の開閉度の認知</h3>
+          <p class="principle__text">目標線に対して、フェースがどれだけ開き、閉じているか。ヘッド上のラインで向きを目で確かめられるから、構えた瞬間の迷いがなくなります。</p>
+        </article>
+        <article class="principle">
+          <div class="ph principle__img" data-size="372×456"><img src="https://images.unsplash.com/photo-1758157264325-d159cf9e9558?w=372&h=456&fit=crop&auto=format&q=80" alt="ストローク後に目標へ転がるボール" loading="lazy">
+            <span class="principle__en">PRINCIPLE 03<br>STROKE</span>
+          </div>
+          <button type="button" class="principle__fig" data-zoom="image/principle-3.png" aria-label="図解を拡大：出射角＝入射角のストローク">
+            <img src="image/principle-3.png" alt="図解：出射角＝入射角のストローク" loading="lazy">
+          </button>
+          <h3 class="principle__cap"><span class="principle__no">03</span>ストロークの動きと方向性</h3>
+          <p class="principle__text">ヘッドの中心は、目標線に沿ってゆるやかな弧を描きます。入射角と出射角をそろえた左右対称のストロークが、狙った方向へ球を送り出します。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AGR × TRIPRINCIPLE ============ -->
+  <section class="sec">
+    <div class="inner split split--reverse">
+      <div class="ph split__img" data-size="600×278"><img src="https://images.unsplash.com/photo-1555983321-dbbbc416ed8a?w=600&h=278&fit=crop&auto=format&q=80" alt="ラインを読むゴルファー" loading="lazy"></div>
+      <div class="split__text split__text--dark">
+        <h2 class="split__title">AGR × TRIPRINCIPLE</h2>
+        <p>TRIPRINCIPLEの理論を、AGRのものづくりで形に。ヘッドの重心、フェースの向き、シャフトの角度まで、3つの原理を体現するために一本ずつ設計しました。構えた瞬間に「入る」と思える、それがこのコラボレーションの答えです。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTS ============ -->
+  <section class="sec" id="products">
+    <div class="inner">
+      <h2 class="ttl"><span class="ttl__en">PRODUCTS</span></h2>
+      <div class="products">
+        <article class="product">
+          <div class="ph product__img" data-size="520×319"><img src="https://images.unsplash.com/photo-1722849899776-3c6abb5a46c7?w=520&h=319&fit=crop&auto=format&q=80" alt="カップ際のパター" loading="lazy"></div>
+          <h3 class="product__name">PUTTER</h3>
+          <p class="product__text">ターゲットに対してまっすぐ構えられる形状と、芯で捉えやすい重量配分。TRIPRINCIPLEの理論を落とし込んだ、ラインに乗せるためのパターです。</p>
+          <a href="#" class="btn btn--black">PUTTERを見る</a>
+        </article>
+        <article class="product">
+          <div class="ph product__img" data-size="520×319"><img src="image/putter-mat.jpg" alt="TRIPRINCIPLE パターマット" loading="lazy"></div>
+          <h3 class="product__name">PRACTICE TOOLS <span>/ 練習器具</span></h3>
+          <p class="product__text">自宅でもコースでも、正しい構えとストロークを毎回確認できる練習器具。3つの原理を体に覚えさせ、本番で迷わないストロークをつくります。</p>
+          <a href="#" class="btn btn--black">練習器具を見る</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 練習器具：パターマット ============ -->
+  <section class="sec" id="putter-mat">
+    <div class="inner">
+      <div class="mat">
+        <div class="mat__photo"><img src="image/putter-mat.jpg" alt="床に敷いたTRIPRINCIPLE パターマットと箱" loading="lazy"></div>
+        <div class="mat__body">
+          <span class="mat__label">PRACTICE TOOL</span>
+          <h2 class="mat__title">TRIPRINCIPLE<br>PUTTER MAT</h2>
+          <p class="mat__lead">3つの原理を、毎日の練習で体に覚えさせる。<br>目盛りとラインが、あなたのストロークを映し出します。</p>
+          <ul class="mat__points">
+            <li><span>01</span>0〜150cmの距離の目盛りで、距離感をつかむ</li>
+            <li><span>02</span>目標線とガイドラインで、フェースの向きを確かめる</li>
+            <li><span>03</span>転がったボールの軌跡で、ストロークの方向性を知る</li>
+          </ul>
+          <a href="#" class="btn btn--black">パターマットを見る</a>
+        </div>
+      </div>
+    </div>
+    <div class="matStrip">
+      <div class="inner">
+        <p class="matStrip__head"><span>MAT DESIGN</span>マットの全体図</p>
+        <div class="matStrip__scroll" tabindex="0" aria-label="マットの全体図（横にスクロールできます）">
+          <div class="matStrip__track">
+            <img src="image/mat-1.jpg" alt="マットの柄（150〜90cm）" loading="lazy">
+            <img src="image/mat-2.jpg" alt="マットの柄（80〜20cm）" loading="lazy">
+            <img src="image/mat-3.jpg" alt="マットの柄（10cm〜スタート地点）" loading="lazy">
+          </div>
+        </div>
+        <p class="matStrip__note">← 横にスクロールして全体を見られます →</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RECOMMEND ITEM ============ -->
+  <section class="sec">
+    <div class="inner">
+      <h2 class="ttl ttl--line"><span class="ttl__sub">おすすめ商品</span><span class="ttl__en">RECOMMEND ITEM</span></h2>
+      <div class="items">
+        <article class="item">
+          <a href="#" class="item__link">
+            <div class="ph item__img" data-size="318×318"><img src="https://images.unsplash.com/photo-1621005570352-6418df03796b?w=318&h=318&fit=crop&auto=format&q=80" alt="パターとボール" loading="lazy"></div>
+            <h3 class="item__name">AGR × TRIPRINCIPLE PUTTER</h3>
+            <p class="item__price">55,000円<small>(税込)</small></p>
+            <p class="item__desc">構えた瞬間に向きが決まる、TRIPRINCIPLE理論のパターです。</p>
+          </a>
+          <button type="button" class="fav" aria-label="お気に入りに追加" aria-pressed="false"></button>
+        </article>
+        <article class="item">
+          <a href="#" class="item__link">
+            <div class="ph item__img" data-size="318×318"><img src="image/putter-mat.jpg" alt="TRIPRINCIPLE パターマット" loading="lazy"></div>
+            <h3 class="item__name">TRIPRINCIPLE パターマット</h3>
+            <p class="item__price">33,000円<small>(税込)</small></p>
+            <p class="item__desc">距離の目盛りと方向のガイドで、3つの原理を自宅で練習できるマットです。</p>
+          </a>
+          <button type="button" class="fav" aria-label="お気に入りに追加" aria-pressed="false"></button>
+        </article>
+        <article class="item">
+          <a href="#" class="item__link">
+            <div class="ph item__img" data-size="318×318"><img src="https://images.unsplash.com/photo-1650465263750-e333c7bcd30c?w=318&h=318&fit=crop&auto=format&q=80" alt="カップ際のボール" loading="lazy"></div>
+            <h3 class="item__name">TRIPRINCIPLE アライメントミラー</h3>
+            <p class="item__price">8,800円<small>(税込)</small></p>
+            <p class="item__desc">目線と肩のラインを鏡で確認できる、構えづくりのための練習器具です。</p>
+          </a>
+          <button type="button" class="fav" aria-label="お気に入りに追加" aria-pressed="false"></button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INFORMATION ============ -->
+  <section class="sec" id="information">
+    <div class="inner">
+      <h2 class="ttl ttl--line"><span class="ttl__sub">お知らせ</span><span class="ttl__en">INFORMATION</span></h2>
+      <ul class="news">
+        <li><a href="#"><time datetime="2026-11-05">2026.11.05</time><span>AGR × TRIPRINCIPLE商品の販売を開始しました。</span></a></li>
+        <li><a href="#"><time datetime="2026-11-04">2026.11.04</time><span>販売サイトを開設しました。</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ NEW ARRIVAL ============ -->
+  <section class="sec">
+    <div class="inner">
+      <h2 class="ttl ttl--line"><span class="ttl__sub">新着商品</span><span class="ttl__en">NEW ARRIVAL</span></h2>
+      <div class="items">
+        <article class="item">
+          <a href="#" class="item__link">
+            <div class="ph item__img" data-size="318×318"><img src="https://images.unsplash.com/photo-1722849899776-3c6abb5a46c7?w=318&h=318&fit=crop&auto=format&q=80" alt="カップ際のパター" loading="lazy"></div>
+            <h3 class="item__name">AGR × TRIPRINCIPLE PUTTER</h3>
+            <p class="item__price">55,000円<small>(税込)</small></p>
+            <p class="item__desc">構えた瞬間に向きが決まる、TRIPRINCIPLE理論のパターです。</p>
+          </a>
+          <button type="button" class="fav" aria-label="お気に入りに追加" aria-pressed="false"></button>
+        </article>
+        <article class="item">
+          <a href="#" class="item__link">
+            <div class="ph item__img" data-size="318×318"><img src="image/putter-mat.jpg" alt="TRIPRINCIPLE パターマット" loading="lazy"></div>
+            <h3 class="item__name">TRIPRINCIPLE パターマット</h3>
+            <p class="item__price">33,000円<small>(税込)</small></p>
+            <p class="item__desc">距離の目盛りと方向のガイドで、3つの原理を自宅で練習できるマットです。</p>
+          </a>
+          <button type="button" class="fav" aria-label="お気に入りに追加" aria-pressed="false"></button>
+        </article>
+        <article class="item">
+          <a href="#" class="item__link">
+            <div class="ph item__img" data-size="318×318"><img src="https://images.unsplash.com/photo-1723570734406-4b8455a35e4a?w=318&h=318&fit=crop&auto=format&q=80" alt="芝の上のクラブとボール" loading="lazy"></div>
+            <h3 class="item__name">TRIPRINCIPLE アライメントミラー</h3>
+            <p class="item__price">8,800円<small>(税込)</small></p>
+            <p class="item__desc">目線と肩のラインを鏡で確認できる、構えづくりのための練習器具です。</p>
+          </a>
+          <button type="button" class="fav" aria-label="お気に入りに追加" aria-pressed="false"></button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 最近チェックした商品 ============ -->
+  <section class="sec sec--last">
+    <div class="inner">
+      <h2 class="ttl-mini"><span>最近チェックした商品</span></h2>
+      <ul class="history">
+        <li><a href="#"><div class="ph" data-size="200×200"><img src="https://images.unsplash.com/photo-1532508583690-538a1436f423?w=200&h=200&fit=crop&auto=format&q=80" alt="グリーン上のパターとボール" loading="lazy"></div><p>55,000円<small>(税込)</small></p></a></li>
+        <li><a href="#"><div class="ph" data-size="200×200"><img src="https://images.unsplash.com/photo-1621005570352-6418df03796b?w=200&h=200&fit=crop&auto=format&q=80" alt="パターとボール" loading="lazy"></div><p>33,000円<small>(税込)</small></p></a></li>
+        <li><a href="#"><div class="ph" data-size="200×200"><img src="https://images.unsplash.com/photo-1722849899776-3c6abb5a46c7?w=200&h=200&fit=crop&auto=format&q=80" alt="カップ際のパター" loading="lazy"></div><p>8,800円<small>(税込)</small></p></a></li>
+        <li><a href="#"><div class="ph" data-size="200×200"><img src="image/putter-mat.jpg" alt="TRIPRINCIPLE パターマット" loading="lazy"></div><p>33,000円<small>(税込)</small></p></a></li>
+        <li><a href="#"><div class="ph" data-size="200×200"><img src="https://images.unsplash.com/photo-1650465263750-e333c7bcd30c?w=200&h=200&fit=crop&auto=format&q=80" alt="カップ際のボール" loading="lazy"></div><p>55,000円<small>(税込)</small></p></a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ フッター ============ -->
+<footer class="footer">
+  <div class="inner">
+    <div class="footer__top">
+      <div class="footer__links">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="#">支払い方法について</a></li>
+          <li><a href="#">配送方法について</a></li>
+          <li><a href="#">返品について</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">アカウント</a></li>
+          <li><a href="#">ログアウト</a></li>
+          <li><a href="#">カートを見る</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">特定商取引法に基づく表記</a></li>
+          <li><a href="#">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+      <div class="footer__social">
+        <p class="footer__head">ソーシャル</p>
+        <div class="footer__sns">
+          <a href="#" aria-label="Instagram"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg></a>
+          <a href="#" aria-label="X"><svg class="ico" viewBox="0 0 24 24"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg class="ico" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__guide">
+      <div>
+        <p class="footer__head">配送・送料について</p>
+        <p>クロネコヤマト</p>
+      </div>
+      <div>
+        <p class="footer__head">返品について</p>
+        <dl>
+          <dt>不良品</dt>
+          <dd>商品到着後速やかにご連絡ください。商品に欠陥がある場合を除き、返品には応じかねますのでご了承ください。</dd>
+          <dt>返品期限</dt>
+          <dd>商品到着後7日以内とさせていただきます。期限を過ぎた場合はお受けできません。</dd>
+          <dt>返品送料</dt>
+          <dd>不良品の場合は弊社にて負担いたします。お客様都合による返品の場合はお客様負担となります。</dd>
+        </dl>
+      </div>
+      <div>
+        <p class="footer__head">お支払い方法について</p>
+        <p>クレジットカード・代金引換・銀行振込</p>
+      </div>
+    </div>
+  </div>
+  <p class="footer__copy">© 2026 〇〇〇〇株式会社 All Rights Reserved.</p>
+</footer>
+
+<!-- 図解の拡大表示 -->
+<div class="zoom" id="zoom" hidden>
+  <button type="button" class="zoom__close" aria-label="閉じる"></button>
+  <img alt="">
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
