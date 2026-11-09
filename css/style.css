@@ -924,6 +924,47 @@ img { max-width: 100%; height: auto; display: block; }
   .aboutCta { grid-template-columns: 1fr; gap: 32px; }
 }
 
+/* =========================================================
+   スライダー：商品写真の回（黒地に右寄せで、ヘッド全体を見せる）
+   ========================================================= */
+.slide--product .slide__img { background: #121212; } /* 写真の端の黒と同じ色 */
+.slide--product .slide__img::after { display: none; } /* 仮置きのサイズ表示を隠す */
+.slide--product .slide__img img { left: auto; right: 0; width: 58%; object-fit: contain; object-position: right center; } /* 左に文字の場所を空ける */
+
+/* =========================================================
+   使用プロ（記念写真2枚＋名前・コメント）
+   ========================================================= */
+.player {
+  display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 64px;
+  align-items: center;
+}
+.player__photos { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.player__img { aspect-ratio: 928 / 1152; border-radius: var(--radius); }
+.player__img:nth-child(2) { margin-top: 48px; } /* 2枚を上下にずらしてリズムを出す */
+.player__name {
+  margin-top: 16px;
+  font-size: clamp(24px, 2.4vw, 32px); font-weight: 700; line-height: 1.4;
+}
+.player__name span { margin-left: 8px; font-size: .55em; color: var(--sub); }
+.player__meta { margin-top: 8px; font-size: 13px; color: var(--sub); }
+.player__voice {
+  margin: 32px 0 0; padding: 24px 0 24px 24px;
+  border-left: 2px solid var(--black);
+  font-size: 16px; font-weight: 700; line-height: 2;
+}
+.player__note {
+  margin-top: 28px; padding-top: 16px;
+  border-top: 1px solid var(--line);
+  font-family: var(--ff-en); font-size: 12px; font-weight: 600; letter-spacing: .06em; color: var(--sub);
+}
+
+@media (max-width: 768px) {
+  .slide--product .slide__img img { width: 100%; object-fit: contain; object-position: center top; } /* 写真は上、文字は下の黒地に */
+  .player { grid-template-columns: 1fr; gap: 32px; }
+  .player__photos { gap: 10px; }
+  .player__img:nth-child(2) { margin-top: 28px; }
+}
+
 /* 320px前後の小さい機種：ロゴとアイコンが横に収まるように詰める */
 @media (max-width: 359px) {
   .header__logo { font-size: 10px; }
