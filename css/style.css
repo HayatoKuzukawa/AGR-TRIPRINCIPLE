@@ -927,9 +927,9 @@ img { max-width: 100%; height: auto; display: block; }
 /* =========================================================
    スライダー：商品写真の回（黒地に右寄せで、ヘッド全体を見せる）
    ========================================================= */
-.slide--product .slide__img { background: #121212; } /* 写真の端の黒と同じ色 */
+.slide--product .slide__img { background: #0c0d0b; } /* 写真の下端の芝と同じ暗さ */
 .slide--product .slide__img::after { display: none; } /* 仮置きのサイズ表示を隠す */
-.slide--product .slide__img img { left: auto; right: 0; width: 58%; object-fit: contain; object-position: right center; } /* 左に文字の場所を空ける */
+.slide--product .slide__img img { object-position: 50% 55%; } /* パターは写真の右側、左の暗い芝に文字を置く */
 
 /* =========================================================
    使用プロ（記念写真2枚＋名前・コメント）
@@ -959,7 +959,12 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 @media (max-width: 768px) {
-  .slide--product .slide__img img { width: 100%; object-fit: contain; object-position: center top; } /* 写真は上、文字は下の黒地に */
+  /* スマホ用の写真を上に置き、下端を背景の暗さに溶かして文字を乗せる */
+  .slide--product .slide__img img {
+    height: 64%; object-position: center top;
+    -webkit-mask-image: linear-gradient(#000 70%, transparent);
+    mask-image: linear-gradient(#000 70%, transparent);
+  }
   .player { grid-template-columns: 1fr; gap: 32px; }
   .player__photos { gap: 10px; }
   .player__img:nth-child(2) { margin-top: 28px; }
